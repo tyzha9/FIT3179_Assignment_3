@@ -1,0 +1,216 @@
+Country,Year,Energy
+Afghanistan,2016,1010
+Africa,2016,4208
+Albania,2016,13668
+Algeria,2016,15211
+American Samoa,2016,26150
+Angola,2016,3606
+Antigua and Barbuda,2016,32287
+Argentina,2016,22832
+Armenia,2016,14331
+Aruba,2016,51604
+Australia,2016,67350
+Austria,2016,45481
+Azerbaijan,2016,17394
+Bahamas,2016,32751
+Bahrain,2016,142159
+Bangladesh,2016,2361
+Barbados,2016,25107
+Belarus,2016,28325
+Belgium,2016,64278
+Belize,2016,8391
+Benin,2016,2129
+Bermuda,2016,50229
+Bhutan,2016,33586
+Bolivia,2016,8243
+Bosnia and Herzegovina,2016,24398
+Botswana,2016,9750
+Brazil,2016,16059
+British Virgin Islands,2016,26164
+Brunei,2016,123823
+Bulgaria,2016,29425
+Burkina Faso,2016,763
+Burundi,2016,162
+Cambodia,2016,2933
+Cameroon,2016,2003
+Canada,2016,106404
+Cape Verde,2016,6923
+Cayman Islands,2016,42141
+Central African Republic,2016,479
+Chad,2016,98
+Chile,2016,23932
+China,2016,24938
+Colombia,2016,10419
+Comoros,2016,998
+Congo,2016,5659
+Cook Islands,2016,20915
+Costa Rica,2016,12890
+Croatia,2016,22132
+Cuba,2016,11127
+Cyprus,2016,27044
+Czech Republic,2016,43317
+Democratic Republic of Congo,2016,489
+Denmark,2016,34302
+Djibouti,2016,4186
+Dominica,2016,12774
+Dominican Republic,2016,10119
+Ecuador,2016,11179
+Egypt,2016,10999
+El Salvador,2016,6329
+Equatorial Guinea,2016,13371
+Eritrea,2016,769
+Estonia,2016,53537
+Ethiopia,2016,777
+Europe,2016,31314
+Faeroe Islands,2016,70408
+Fiji,2016,12748
+Finland,2016,59643
+France,2016,41931
+French Guiana,2016,16877
+French Polynesia,2016,17261
+Gabon,2016,10764
+Gambia,2016,1118
+Georgia,2016,19301
+Germany,2016,46028
+Ghana,2016,2705
+Gibraltar,2016,1524228
+Greece,2016,28992
+Greenland,2016,63928
+Grenada,2016,10802
+Guadeloupe,2016,21278
+Guam,2016,55660
+Guatemala,2016,5198
+Guinea,2016,1077
+Guinea-Bissau,2016,951
+Guyana,2016,11181
+Haiti,2016,1414
+Honduras,2016,5401
+Hong Kong,2016,46265
+Hungary,2016,26513
+Iceland,2016,177647
+India,2016,6306
+Indonesia,2016,7752
+Iran,2016,37681
+Iraq,2016,14723
+Ireland,2016,38378
+Israel,2016,35557
+Italy,2016,29446
+Jamaica,2016,12888
+Japan,2016,40543
+Jordan,2016,13769
+Kazakhstan,2016,42123
+Kenya,2016,1906
+Kiribati,2016,2262
+Kuwait,2016,118318
+Kyrgyzstan,2016,11240
+Laos,2016,12009
+Latvia,2016,22037
+Lebanon,2016,14188
+Lesotho,2016,2107
+Liberia,2016,1038
+Libya,2016,32576
+Lithuania,2016,22311
+Luxembourg,2016,73131
+Macedonia,2016,14530
+Madagascar,2016,693
+Malawi,2016,475
+Malaysia,2016,38096
+Maldives,2016,14106
+Mali,2016,938
+Malta,2016,74465
+Martinique,2016,28376
+Mauritania,2016,2726
+Mauritius,2016,19921
+Mexico,2016,17535
+Moldova,2016,9392
+Mongolia,2016,19273
+Montenegro,2016,19891
+Montserrat,2016,47620
+Morocco,2016,6312
+Mozambique,2016,3498
+Namibia,2016,8577
+Nauru,2016,29984
+Nepal,2016,1721
+Netherlands,2016,58545
+New Caledonia,2016,77854
+New Zealand,2016,53336
+Nicaragua,2016,4629
+Niger,2016,473
+Nigeria,2016,2726
+Niue,2016,14999
+North America,2016,87878
+North Korea,2016,4521
+Northern Mariana Islands,2016,0
+Norway,2016,101263
+Oman,2016,75032
+Pakistan,2016,4347
+Palestine,2016,3291
+Panama,2016,30704
+Papua New Guinea,2016,3251
+Paraguay,2016,31800
+Peru,2016,9748
+Philippines,2016,4649
+Poland,2016,30351
+Portugal,2016,29133
+Puerto Rico,2016,25997
+Qatar,2016,208849
+Reunion,2016,15146
+Romania,2016,19063
+Russia,2016,54991
+Rwanda,2016,425
+Saint Helena,2016,7163
+Saint Kitts and Nevis,2016,20123
+Saint Lucia,2016,10202
+Saint Pierre and Miquelon,2016,67949
+Saint Vincent and the Grenadines,2016,9397
+Samoa,2016,7892
+Sao Tome and Principe,2016,3073
+Saudi Arabia,2016,93984
+Senegal,2016,2287
+Serbia,2016,21482
+Seychelles,2016,47532
+Sierra Leone,2016,628
+Singapore,2016,170887
+Slovakia,2016,33273
+Slovenia,2016,37948
+Solomon Islands,2016,1568
+Somalia,2016,244
+South Africa,2016,26181
+South Korea,2016,66260
+South Sudan,2016,457
+Spain,2016,33744
+Sri Lanka,2016,4096
+Sudan,2016,2234
+Suriname,2016,20463
+Swaziland,2016,4043
+Sweden,2016,60480
+Switzerland,2016,36749
+Syria,2016,7158
+Taiwan,2016,57025
+Tajikistan,2016,7957
+Tanzania,2016,1299
+Thailand,2016,21587
+Timor,2016,1774
+Togo,2016,1441
+Tonga,2016,5505
+Trinidad and Tobago,2016,143129
+Tunisia,2016,10224
+Turkey,2016,20916
+Turkmenistan,2016,58202
+Turks and Caicos Islands,2016,24066
+Uganda,2016,716
+Ukraine,2016,23122
+United Arab Emirates,2016,138225
+United Kingdom,2016,33577
+United States,2016,79131
+United States Virgin Islands,2016,114260
+Uruguay,2016,20204
+Uzbekistan,2016,15735
+Vanuatu,2016,2516
+Venezuela,2016,27818
+Vietnam,2016,9227
+Western Sahara,2016,1982
+World,2016,20491
+Yemen,2016,2525
+Zambia,2016,2832
+Zimbabwe,2016,3386
