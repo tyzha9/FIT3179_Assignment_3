@@ -1,4 +1,4 @@
-Country,Year,Wind Consumption (Twh),Solar Consumption (Twh),"Geothermal, Biomass and Other (Twh)",Hydro Consumption (Twh)
+Country,Year,Wind,Solar,Other,Hydro
 Africa,1965,0,0,0,13.90563517
 Africa,1966,0,0,0,15.51000414
 Africa,1967,0,0,0,16.19063636
