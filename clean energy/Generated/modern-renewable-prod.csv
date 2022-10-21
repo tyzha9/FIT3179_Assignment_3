@@ -1,4 +1,4 @@
-Country,Year,Electricity from wind (TWh),Electricity from hydro (TWh),Electricity from solar (TWh),Electricity from other renewables including bioenergy (TWh)
+Country,Year,Wind,Hydro,Solar,Other
 Afghanistan,2000,0,0.31,0,0
 Afghanistan,2001,0,0.5,0,0
 Afghanistan,2002,0,0.56,0,0
