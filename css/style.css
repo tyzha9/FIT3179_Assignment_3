@@ -1,0 +1,72 @@
+
+h1 {
+    color: rgb(138, 146, 255);
+    padding: 1cm;
+    text-align: center;
+    font-size: 60px;
+    font-family: 'Cairo', sans-serif;
+}
+h2 {
+    color:rgb(58, 92, 241);
+    padding-left: 20vw;
+    font-size: 40px;
+    font-family: 'Cairo', sans-serif;
+}
+body {
+    background-color: rgb(198, 223, 252);
+  }
+p {
+    color: red;
+    font-size: 25px;
+    font-family: 'Cairo', sans-serif;
+    text-align: center;
+    font-kerning: 10px;
+}
+.p-left {padding-right: 5vw;}
+
+.p1 {color: rgb(88, 80, 199);
+    padding-left: 20vw;
+    padding-right: 20vw;
+}
+.p2 {color: rgb(88, 80, 199);
+    padding-left: 20vw;
+    text-align: right;}
+
+.p3 {color: rgb(88, 80, 199);    
+    padding-right: 20vw;
+    padding-left: 3vw;
+    text-align: left;}
+
+.p4 {color: rgb(88, 80, 199);    
+     font-size: 16px;
+     padding: 2vw;
+     font-family: 'Inconsolata', monospace;
+     text-align: left;}
+.co2_text {color:"#fc8d59";}
+.nostext {color:"#ff2424";}
+.hfctext {color:"#984ea3";}
+.sf6text {color:"#ffffbf";}
+.methanetext {color:"#99d594";}
+.nf3text {color:"#377eb8";}
+.pfctext {color:"#ed24ff";}
+.energytext {color:"#2596be";}
+.windtext {color:"#a7a7a0";}
+.hydrotext {color:"#023f75";}
+.solartext {color:"#ecc685";}
+.othertext {color:"#7c2c85";}
+.vis-container-right {
+    padding-top: 3vw;
+    padding-left: 3vw;
+}
+.vis-container-left {
+    padding-left: 20vw;
+    padding-top: 3vw;
+}
+.vis-container-pie {
+ padding-left: 5vw;
+}
+#energy_map {
+    padding-left: 16vw;
+    width: 120%;
+    height: 100%
+}

@@ -1,0 +1,82 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title": "Greenhouse Gas (GHG) emissions in 10 countries (metric tons)",
+    "width": 300,
+    "height": 200,
+  "mark": "bar",
+    "data": {"url": "https://raw.githubusercontent.com/tyzha9/FIT3179_Assignment_3/main/combined_ghg.csv"},
+    "config": {
+      "background": "rgb(198, 223, 252)",
+      "style": {
+        "cell": {
+          "stroke": "transparent"
+        }
+      }
+    },
+    "transform": [
+      { 
+      "filter": {
+        "oneOf":["Italy", "Australia","Japan", "United States of America", 
+                "Canada", "Ukraine", "Russian Federation", "France", "United Kingdom", "Germany"],
+        "field": "Country"
+        }
+      },
+      {"filter": "datum.Year==year_select"}
+    ],
+        "params": [
+        {
+            "name": "year_select",
+            "value": 1990,
+            "bind": {
+            "input": "range",
+            "min": 1990,
+            "max": 2014,
+            "step": 1,
+            "name": "Select a Year:"
+            }
+            },
+            {
+           "name": "ghg_type",
+           "select": {"type": "point", "fields": ["Category"]},
+            "bind": "legend"
+    }
+    ],
+    "encoding": {
+    "x": {
+      "field": "Country",
+      "type": "ordinal",
+      "title": "Countries",
+      "sort": {"op": "sum", "field": "Emission"}
+    },
+    "y": {
+      "field": "Emission",
+      "type": "quantitative",
+      "title": "Emissions (Co2 Equivilent, Metric Tons)",
+      "scale": {"type": "linear", "domain":[0,7500000]}
+    },
+    "color": {
+      "field": "Category",
+      "type": "nominal",
+      "title": "Greenhouse Gas Emission Type",
+      "scale":{"range": [
+        "#fc8d59",
+        "#984ea3",
+        "#99d594",
+        "#ff2424",
+        "#377eb8",
+        "#ed24ff",
+        "#ffffbf"
+        ]
+      }
+    },
+    "tooltip": [
+        {"field": "Country", "type": "nominal", "title": "Country:"},
+        {"field": "Category", "type": "nominal", "title": "GHG Type"},
+        {"field": "Emission", "type": "quantitative", "title": "Emission (Co2 Equivilent)"}
+    ],
+    "opacity": {
+      "condition": {"param": "ghg_type", "value": 1},
+      "value": 0.2
+    }
+  }
+  }

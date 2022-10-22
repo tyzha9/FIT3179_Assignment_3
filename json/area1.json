@@ -1,0 +1,41 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "width": 500, "height": 300,
+    "data": {"url": "https://raw.githubusercontent.com/tyzha9/FIT3179_Assignment_3/main/clean%20energy/Generated/modern-renewable-prod.csv"},
+    "transform": [
+        {"fold": ["Wind", "Solar", "Hydro", "Other"]},
+        {"filter": "datum.Year < 2021"},
+        {"filter": "datum.Country == 'World'"}
+    ],
+    "config": {
+        "background": "rgb(198, 223, 252)",
+        "style": {
+          "cell": {
+            "stroke": "transparent"
+          }
+        }
+      },
+    "mark": "area",
+    "encoding": {
+      "x": {
+        "field": "Year",
+        "scale": {"type":"linear", "domain":[1965, 2020]}
+      },
+      "y": {
+        "aggregate": "sum", 
+        "field": "value",
+        "title": "Energy Generated (tWh)"
+      },
+      "color": {
+        "field": "key",
+        "scale": {
+        "domain": ["Solar", "Wind", "Hydro", "Other"],
+        "range": ["#e7ba52", "#c7c7c7", "#1f77b4", "#9467bd"]}
+      },
+      "tooltip": [
+        {"field": "Year", "type": "ordinal", "title": "Year:"},
+        {"field": "key", "type": "nominal", "title": "Energy Type"},
+        {"field": "value", "type": "quantitative", "title": "Energy Generated (TwH)"}
+      ]
+    }
+  }

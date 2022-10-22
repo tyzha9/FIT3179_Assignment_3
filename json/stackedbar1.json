@@ -1,0 +1,91 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "description": "Renewable Energy by Country (Past vs Present)",
+    "data": {"url": "https://raw.githubusercontent.com/tyzha9/FIT3179_Assignment_3/main/clean%20energy/Consumed/modern-renewable-energy-consumption.csv"},
+    "transform": [
+      {"fold": ["Wind", "Solar", "Hydro", "Other"]
+      },
+      {
+      "filter": {
+        "oneOf":["Africa", "Australia","Brazil", "United States", 
+                "Canada", "China", "Russia", "France", "United Kingdom", "Germany"],
+        "field": "Country"
+        }
+      },
+      {"filter": "datum.Year==Year_Select"},
+      {"filter": "Energy_Type==null || datum.key==Energy_Type"}
+    ],
+    "config": {
+        "background": "rgb(198, 223, 252)",
+        "style": {
+          "cell": {
+            "stroke": "transparent"
+          }
+        }
+      },
+      "params": [
+    {
+      "name": "Year_Select",
+       "value": 1980,
+      "bind": {
+      "input": "range",
+      "min": 1980,
+       "max": 2016,
+      "step": 1,
+       "name": "Select a Year:"
+     }
+   },
+  {
+    "name": "Energy_Type",
+    "bind": {
+      "input": "select",
+      "options": [
+        "datum.key",
+        "Wind",
+        "Solar",
+        "Hydro",
+        "Other"
+      ],
+      "labels":[
+        "Show All",
+        "Wind Power",
+        "Solar Power",
+        "Hydroelectric Power",
+        "Geothermal, Biofuel and Other"
+    ],
+        "name": "Energy Type"
+    }
+  }
+   ],
+    "width": 500,
+    "height": 300,
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "Country",
+      "type": "ordinal",
+      "title": "Countries",
+      "sort": {"op": "sum", "field": "value"}
+    },
+    "y": {
+      "field": "value",
+      "type": "quantitative",
+      "title": "Energy Consumed (TwH)",
+      "scale": {"type": "linear"}
+    },
+    "color": {
+      "field": "key",
+      "type": "nominal",
+      "scale": {
+        "domain": ["Solar", "Wind", "Hydro", "Other"],
+        "range": ["#e7ba52", "#c7c7c7", "#1f77b4", "#9467bd"]
+      },
+      "title": "Renewable Energy Type"
+    },
+    "tooltip": [
+        {"field": "Country", "type": "nominal", "title": "Country:"},
+        {"field": "key", "type": "nominal", "title": "Energy Type"},
+        {"field": "value", "type": "quantitative", "title": "Energy Consumed (TwH)"}
+    ]
+  }
+}

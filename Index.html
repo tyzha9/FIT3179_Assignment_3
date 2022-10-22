@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Title -->
+      <title>Electiricty, Greenhouse gasses and reneweable electricity</title>
+    <!-- Metadata for character and device compatibility -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Importing Vega-Lite -->
+    <script src="https://cdn.jsdelivr.net/npm/vega@5.20.2"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.1.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.17.0"></script>
+    <script src="vega_lite_vis.js"></script>
+    <!-- Linking .css stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Linking Fonts used -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400&family=Inconsolata&display=swap" rel="stylesheet"> 
+    <!-- Importing pure.css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@2.1.0/build/pure-min.css" integrity="sha384-yHIFVG6ClnONEA5yB5DJXfW2/KC173DIQrYoZMEtBvGzmf0PKiGyNEqe9N6BNDBH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@2.1.0/build/grids-responsive-min.css" />
+</head>
+<body>
+    <h2>Our World in Energy</h2>
+        <!-- Chroropleth map showing energy use per capital globally -->
+    <div class="map">
+        <div id="energy_map">
+        </div>
+        <p class="p1">Ever since the early 1900s, Electricity has had an ever greater presence and influence in the daily lives of people worldwide. With a few notable exceptions in central Africa, much of the world in 2022 relies extremely heavily on electricity to power our modern cities and personal appliances. As ever greater advances are made in the field, public attention has increasingly turned towards the glaring issue of sustainability. Through our relaince on and consumption of electricity, our atmosphere has become increasingly polluted by greenhouse gasses, a statistic that continuously grows alongside the amount of electricity we produce on a daily basis.</p>
+        <p class="p1">This map above displays the world's energy consumption per capita over a span of over 30 years, illustrating the changes and fluctuations caused by both increases and decreases of energy supply and population. The Information displayed is measured in kWh (Kilowatt-hours), a metric that measures an individual unit of energy equal to one kilowatt sustained over one hour.</p>
+        <p class="p1">Ever since the early 1900s, Electricity has had an ever greater presence and influence in the daily lives of people worldwide. With a few notable exceptions in central Africa, much of the world in 2022 relies extremely heavily on electricity to power our modern cities and personal appliances. As ever greater advances are made in the field, public attention has increasingly turned towards the glaring issue of sustainability. Through our relaince on and consumption of electricity, our atmosphere has become increasingly polluted by greenhouse gasses, a statistic that continuously grows alongside the amount of electricity we produce on a daily basis.</p>
+            <!-- 2 part pure.css division -->
+    <div class="pure-g">
+        <div class="pure-u-1-2">
+          <div class="p-left">
+            <h2>Renewable Energy</h2>
+            <p class="p2">Ever since the early 1900s, Electricity has had an ever greater presence and influence in the daily lives of people worldwide. With a few notable exceptions in central Africa, much of the world in 2022 relies extremely heavily on electricity to power our modern cities and personal appliances. As ever greater advances are made in the field, public attention has increasingly turned towards the glaring issue of sustainability. Through our relaince on and consumption of electricity, our atmosphere has become increasingly polluted by greenhouse gasses, a statistic that continuously grows alongside the amount of electricity we produce on a daily basis.</p>
+          </div>
+        </div>
+        <div class="pure-u-1-2">
+                <!-- stacked bar chart showing renewable energy production -->
+          <div id="energy_stacked" class="vis-container-right">
+          </div>
+        </div>
+      </div>
+    </div>
+    <p class="p1">Ever since the early 1900s, Electricity has had an ever greater presence and influence in the daily lives of people worldwide. With a few notable exceptions in central Africa, much of the world in 2022 relies extremely heavily on electricity to power our modern cities and personal appliances. As ever greater advances are made in the field, public attention has increasingly turned towards the glaring issue of sustainability. Through our relaince on and consumption of electricity, our atmosphere has become increasingly polluted by greenhouse gasses, a statistic that continuously grows alongside the amount of electricity we produce on a daily basis.</p>
+        <!-- 2 part pure.css division -->
+    <div class="pure-g">
+            <div class="pure-u-1-2">
+                    <!-- area chart showing worldwide production of reneweable energy over time -->
+            <div id="energy_area" class="vis-container-left"></div>
+        </div>
+        <div class="pure-u-1-2">
+            <p class="p3">Since electricity became widely available in the 1910's and 1920's, the first wind turbines were sold in the 1920s servicing remote farmers in the united states. Soon thereafter, Hydroelectric power takes over as the primary source of reneweable energy globally. The majority of this hydroelectric power comes from various large dam projects. As seen in the display to the left, hydroelectricity remains by far the dominant source of reneweable energy in the world throughout the late 90s well into the 2010s.</p>
+        </div>
+    </div>
+    <p class="p1">It is clear that while the generation of electricity through renewable sources has increase dramatically in many countries, as is evident in the bar chart to the right, the production of greenhouse gasses has not seen the same increase and, in some cases, have even seen a decrease over time in the production of such harmful emissions.</p>
+    <p class="p1">Throughout the late 90s, greater enviromental awareness began to increase public pushback against the use of harmful greenhouse-gas emitting methods of electricity productiuon. The increase in demand for electricity evidenced by the map shown at the top of this page, coupled with the decrease in greenhouse gas emissions, correlates neatly with the massive increase in renewable energy produced as the data moves into the modern era of the 2000s</p>
+        <!-- 2 part pure.css division -->
+    <div class="pure-g">
+        <div class="pure-u-1-2">
+                <!-- line/bar split axis chart showing clean energy production and energy consumption per capita in the US-->
+            <div id="us_line" class="vis-container-left"></div>
+          </div>
+        <div class="pure-u-1-2">
+            <p class="p3">To the left is a chart showing the carbon dioxide emissions of the united states compared against the energy consumption per capita of the population. As the united states has shown a decrease in energy consumption per capita, while carbon dioxide emissions have remained largely the same, it would imply an increase in the production of renewable energy to compensate for the decreased amount of electricity produced from sources that produce Carbon Dioxide (such as coal, gas and oil generation of electricity). This correlates with above the above bar chart showing a large increase in the consumption of reneweable energy in the United States in recent years.</p>
+        </div>
+    </div>
+        <!-- 2 part pure.css division -->
+    <div class="pure-g">
+        <div class="pure-u-1-2">
+            <p class="p2">Conversely, looking at the same display made using data from Russia shows that despite a larger decrease in Co2 emissions since the 1990s, Russia's energy consumptions per capita has been steadily increasing. Unlike what is seen in the United States, this may be due to a stagnation of population resulting in a higher energy consumption per capita, as looking at the consumption of renewable energy from Russia in previous charts does not fully account for the increase in demand. Alternatively, the production of energy from non-renewable sources may have become less damaging to the enviroment while not being fully renewable at the current time.
+            </p>
+        </div>
+        <div class="pure-u-1-2">
+            <!-- line/bar split axis chart showing clean energy production and energy consumption per capita in Russia-->
+            <div id="russia_line" class="vis-container-right"></div>
+          </div>
+        </div>
+    </div>
+    <h2>Greenhouse Gasses</h2>
+    <p class="p1">When looking at the types of greenhouse gasses (GHGs) that enters our atmosphere, the vast majority of emissions is caused by Carbon Dioxide, with other greenhouse gasses failing to compete with Co2 even when all their emissions are combined. To explain this, the source, use and role in energy production of each of the majour greenhouse gasses are as follows:</p>
+        <!-- p1 division used to format the pure.css division correctly-->
+    <div class="p1">
+                <!-- 3 part pure.css division -->
+    <div class="pure-g">
+        <div class="pure-u-1-3">
+    <p class="p4"><span style="color:#bb4e1c"> Carbon dioxide emissions are naturally emitted by all living animals, but the portion surveyed in this dataset is caused primarily by the burning of coal, oil or natural gasses to produce energy. Co2 is the by far the most prominent greenhouse gas produced, with its prominence growing as electricity became more essential to human life, and reducing in recent times slightly with the introduction of renewable sources of electricity</span></p>
+        </div>
+        <div class="pure-u-1-3">
+    <p class="p4"><span style="color:#458640">Methane is produced by various processes involving organic matter, largely being released through decomposition, found in natural deposits in the earth's mantle or through the excretion of the gas by animals. Human livestock farming contributes to the majority of this greenhouse gas, but it plays no role in the production of electricity, but can be a byproduct of transporting and producing coal, natural gasses and oils.</span></p>
+        </div>
+        <div class="pure-u-1-3">
+    <p class="p4"><span style="color:#ac1616">Nitrous Oxide is produced through agricultural, industrial and wasterwater treatment projects. However, a large contributer to nitrous oxide release into the atmosphere is the burning of fossil fuels and especially the combustion of solid waste.</span></p>
+        </div>
+    </div>
+</div>
+<div class="p1">
+    <div class="pure-g">
+        <div class="pure-u-1-3">
+    <p class="p4"><span style="color:#702e7a">Hydrofluorocarbons are used mainly in refrigeration appliances. While a potent and harmful greenhouse gas, it plays no role in energy production but does play a large role in energy consumption, given the high energy costs of air conditioning and refrigeration.</span></p>
+        </div>
+        <div class="pure-u-1-3">
+            <!-- pie chart showing distribution of greenhouse gasses emitted worldwide -->
+            <div id="ghg_pie" class="vis-container-pie"></div>
+        </div>
+        <div class="pure-u-1-3">
+    <p class="p4"><span style="color:#225c8b">Nitrogen Trifluoride is a synthetic gas used in the manufacture of and function of many photovoltaic appliances, such as LED screens, lights and other similar electronics. Similar to Hydrofluorocarbons, they play no role in electricity production but do play a large role in its consumption.</span></p>
+        </div>
+    </div>
+</div>
+<div class="p1">
+    <div class="pure-g">
+        <div class="pure-u-1-3">
+    <p class="p4"><span style="color:#b90dc9">Perfluorocarbons are byproducts of some metal manufacturing processes, mainly the widely used metal aluminium. In addition to this they are used in the process of manufacturing semiconductors alongisde other uses in the elctronics industry.</span></p>
+        </div>
+        <div class="pure-u-1-3">
+    <p class="p4">Sulphur Hexafluoride, Perfluorocarbons, Nitrogen Trifluoride and Hydrofluorocarbons make up only a tiny percentage of the greenhouse gasses released into the atmosphere, and as a result are barely visible when comparing their share of emissions with that of the other four greenhouse gasses. It is of note that of the three remaining greenhouses gasses, all have some form of direct connection to the process of generating electricity.</p>
+        </div>
+        <div class="pure-u-1-3">
+    <p class="p4"><span style="color:#979510">Sulphur hexafluoride is used in electronics to insulate and protect, being used in computers, smartphones, vehicles and high voltage equipment. It has also been used in metal smelting, but plays little role in electricity production.</span></p>
+        </div>
+    </div>
+</div>
+<div class="pure-g">
+    <div class="pure-u-1-2">
+        <p class="p2">Information on greenhouse gas emissions remains unavailable in the case of several countries due to government policy or lack of research. As an example, China has no official UN study that can confirm their greenhouse gas emissions, despite being heavily criticised in media as a leading contributer to global warming. Despite this, looking at the display on the right, it is evident that while some effort to cut down on greenhouse gasses has been made in recent years, the largest contributer has remained steady in their production of greenhouse gasses. Despite the United State's increased production of reneweable electricity and decreasing electricity use per capita, the production of carbon dioxide especially has remained as high if not higher than 20 years in the past.
+        </p>
+    </div>
+    <div class="pure-u-1-2">
+        <div id="ghg_bar" class="vis-container-right"></div>
+      </div>
+    </div>
+</div>
+<p class="p4">This visualization was created by Tian Zhang for FIT3179 in 2022</p>
+</body>

@@ -1,0 +1,58 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "description": "Russian Energy Consumption vs Carbon Dioxide Emission",
+    "width": 400, "height": 300,
+    "data": {
+      "url": "https://raw.githubusercontent.com/tyzha9/FIT3179_Assignment_3/main/energy_ghg_clean.csv"
+    },
+    "config": {
+      "background": "rgb(198, 223, 252)",
+      "style": {
+        "cell": {
+          "stroke": "transparent"
+        }
+      }
+    },
+    "encoding": {
+      "x": {
+        "field": "Year",
+        "type": "ordinal",
+        "title": "Year"
+      },
+      "tooltip": [
+          {"field": "Energy", "type": "quantitative", "title": "Energy Consumption per Capita (kWh)"},
+          {"field": "Emission", "type": "quantitative", "title": "Carbon Dioxide Emmission (Metric Tons)"}
+      ]
+    },
+    "transform": [{"filter": "datum.Country=='Russia'"}],
+    "layer": [
+      {
+        "mark": {"type": "bar", "color": "#be534b", "interpolate": "monotone"},
+        "encoding": {
+          "y": {
+            "field": "Emission",
+            "type": "quantitative",
+            "title": "Co2 Emissions",
+            "axis": {"titleColor":"#ac453e"}
+          },
+  
+          "y2": {
+            "field": "Energy"
+          }
+        }
+      },
+      {
+        "mark": {"stroke": "#fff349", "type": "line", "interpolate": "monotone"},
+        "encoding": {
+          "y": {
+            "field": "Energy",
+            "title": "Energy Consumption",
+            "axis": {"titleColor":"#a89216"},
+            "sort": "descending"
+          }
+        }
+      } 
+    ]
+    
+  }
+  

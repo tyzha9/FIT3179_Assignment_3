@@ -1,0 +1,47 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "description": "Emission of Greenhouse Gasses by Country",
+    "data": {
+      "url": "https://raw.githubusercontent.com/tyzha9/FIT3179_Assignment_3/main/combined_ghg.csv"
+    },
+    "transform": [{"filter": "datum.Year==year_select"}
+    ],
+    "config": {
+        "background": "rgb(198, 223, 252)",
+        "style": {
+          "cell": {
+            "stroke": "transparent"
+          }
+        }
+      },
+    "params": [
+          {
+              "name": "year_select",
+              "value": 1990,
+              "bind": {
+              "input": "range",
+              "min": 1990,
+              "max": 2014,
+              "step": 1,
+              "name": "Select a Year:"
+              }
+              }
+      ],
+    "mark": {"type": "arc", "tooltip": true},
+    "encoding": {
+      "theta": {"aggregate": "sum", "field": "Emission", "type": "quantitative", "stack": "normalize", "title": "Emissions (Metric Tons)"},
+      "color": {"field": "Category", "type": "nominal",
+      "scale":{"range": [
+        "#fc8d59",
+        "#984ea3",
+        "#99d594",
+        "#ff2424",
+        "#377eb8",
+        "#ed24ff",
+        "#ffffbf"
+        ]
+      },
+      "legend": null} 
+    }
+  }
+  
