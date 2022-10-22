@@ -48,7 +48,7 @@
       "color": {
         "field": "Energy",
         "type": "quantitative",
-        "scale": {"type": "linear", "clamp":true, "domain":[10000,200000]}
+        "scale": {"type": "linear", "clamp":true, "domain":[10000,200000], "scheme": "oranges"}
       },
       "tooltip": [
         {"field": "properties.SUBUNIT", "type": "nominal", "title": "Country"},
